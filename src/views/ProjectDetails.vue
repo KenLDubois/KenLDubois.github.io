@@ -1,7 +1,23 @@
 <template>
-  <v-container fluid>
-    <h1>Details</h1>
+  <v-container>
+    <v-row>
+      <v-col>
+        <h1>
+          {{project.title}}
+        </h1>
+      </v-col>
+    </v-row>
+    <v-row id="about" ref="about" class="pa-10">
+      <v-col cols="12" md="6">
+          <p class="display-1 font-weight-light grey--text">
+              {{project.shortDescription}}
+          </p>
     <div v-html="mdContent"></div>
+      </v-col>
+      <v-col cols="12" md="6">
+          <v-img :src="project.mainImage"></v-img>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 <script>
@@ -22,9 +38,9 @@ export default {
           response => {
             this.mdContent = marked(response.body);
           }
-        ).catch(
-          
-        )
+        ).catch(error => {
+          window.console.log(error)
+        })
       }
     }
   },
