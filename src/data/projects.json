@@ -1,0 +1,62 @@
+{
+    "data": [
+        {
+            "id": "0",
+            "title": "SoilOptix Web App",
+            "shortDescription": "High definition soil nutrient and texture maps for farmers",
+            "mainImage": "/images/soiloptix_main.jpg",
+            "details" : "Project0.md",
+            "actions": [
+                {
+                    "text": "Live Site (requires login)",
+                    "url": "http://soiloptix.ncinnovation.ca"
+                }
+            ],
+            "tags" : ["Contributor",".NET Core MVC","JQuery"]
+        },
+        {
+            "id": "1",
+            "title": "Project 1",
+            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, natus eos pariatur excepturi magnam quibusdam mollitia voluptatum!",
+            "mainImage": "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+            "actions": [
+                {
+                    "text": "Live Example",
+                    "url": "https://www.google.com/"
+                },
+                {
+                    "text": "View Code",
+                    "url": "https://www.google.com/"
+                }
+            ],
+            "tags" : ["Javascript"]
+        },
+        {
+            "id": "2",
+            "title": "Project 2",
+            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, natus eos pariatur excepturi magnam quibusdam mollitia voluptatum!",
+            "mainImage": "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+            "actions": [
+                {
+                    "text": "Live Example",
+                    "url": "https://www.google.com/"
+                }
+            ],
+            "tags" : ["C#", "SQL", ".Net Core"]
+        },
+        {
+            "id": "3",
+            "title": "Project 3",
+            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, natus eos pariatur excepturi magnam quibusdam mollitia voluptatum!",
+            "mainImage": "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+            "actions": [
+                {
+                    "text": "Live Example",
+                    "url": "https://www.google.com/"
+                }
+            ],
+            "tags" : ["Python", "SQL"]
+        }
+        
+    ]
+}
