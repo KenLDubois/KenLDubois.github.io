@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row class="pa-10">
-      <v-col cols="12" md="6" class="white pa-9">
+    <v-row>
+      <v-col cols="12" md="6">
         <h2>{{project.title}}</h2>
         <p class="display-1 font-weight-light grey--text">{{project.shortDescription}}</p>
         <div v-html="mdContent"></div>
@@ -14,7 +14,7 @@
           target="_blank"
         >{{action.text}}</v-btn>
       </v-col>
-      <v-col cols="12" md="6" class="pt-0">
+      <v-col cols="12" md="6">
         <v-img :src="activeImg" :alt="project.title+' project image'"></v-img>
           <v-container fluid>
             <v-row>
