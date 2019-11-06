@@ -1,7 +1,8 @@
 <template>
   <v-container>
     <v-row id="about" ref="about" class="pa-10">
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" class="white pa-9 mb-5">
+          <h2>About Me</h2>
           <p class="display-1 font-weight-light grey--text">
               My Name is Ken Dubois. <br>I make cool stuff with .NET Core
           </p>
@@ -27,9 +28,9 @@
             wife and our poorly designed miniature dachshund named Karl, whose short legs
             require constant assistance getting him up and down stairs, sofas, the bed, etc.
           </p>
-            <v-btn color="accent darken-3" outlined to="/contact">Contact Me</v-btn>
+            <v-btn color="primary" text to="/contact">Contact Me</v-btn>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" class="pt-0">
           <v-img src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"></v-img>
       </v-col>
     </v-row>

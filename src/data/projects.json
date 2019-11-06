@@ -12,7 +12,8 @@
                     "url": "http://soiloptix.ncinnovation.ca"
                 }
             ],
-            "tags" : [".NET Core MVC","Bootstrap","JQuery"]
+            "tags" : [".NET Core MVC","Bootstrap","JQuery"],
+            "allImages" : ["/images/soiloptix_main.jpg","/images/soiloptix1.jpg","/images/soiloptix2.jpg"]
         },
         {
             "id": "1",

@@ -2,7 +2,6 @@
   <v-parallax 
     src="@/assets/images/splash.jpg"
     dark
-    height="350"
     >
     <v-row align="end">
       <v-col cols="12" class="col-md-6 offset-md-6">
