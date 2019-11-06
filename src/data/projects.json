@@ -5,14 +5,14 @@
             "title": "SoilOptix Web App",
             "shortDescription": "High definition soil nutrient and texture maps for farmers",
             "mainImage": "/images/soiloptix_main.jpg",
-            "details" : "Project0.md",
+            "details" : "SoilOptixWebApp",
             "actions": [
                 {
                     "text": "Live Site (requires login)",
                     "url": "http://soiloptix.ncinnovation.ca"
                 }
             ],
-            "tags" : ["Contributor",".NET Core MVC","JQuery"]
+            "tags" : [".NET Core MVC","Bootstrap","JQuery"]
         },
         {
             "id": "1",
