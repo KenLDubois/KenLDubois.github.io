@@ -4,7 +4,7 @@
       <v-col cols="12" md="6">
           <h2>About Me</h2>
           <p class="display-1 font-weight-light grey--text">
-              My Name is Ken Dubois. <br>I make cool stuff with .NET Core
+              My Name is Ken Dubois. I make cool stuff with .NET Core
           </p>
           <p>
             I am a .Net Core developer with a background in graphic design.
@@ -28,10 +28,10 @@
             wife and our poorly designed miniature dachshund named Karl, whose short legs
             require constant assistance getting him up and down stairs, sofas, the bed, etc.
           </p>
-            <v-btn color="primary" text to="/contact">Contact Me</v-btn>
+            <v-btn color="primary" to="/contact">Contact Me</v-btn>
       </v-col>
       <v-col cols="12" md="6">
-          <v-img src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"></v-img>
+          <v-img src="/images/about.jpg"></v-img>
       </v-col>
     </v-row>
   </v-container>

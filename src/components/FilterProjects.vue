@@ -13,13 +13,17 @@
         </v-list-item>
 <v-list-item>
 <v-chip-group multiple column>
-      <v-chip filter outlined
-       v-for="(tag, i) in $store.state.allTags" 
-       v-model="tag.showTag"
+      <v-chip  
+      outlined
+      small
+      v-for="(tag, i) in allTags" 
+       :v-model="tag.showTag"
        :key="i"
        @input="setFilter(tag.name,$event)"
       >{{ tag.name }}</v-chip>
-      <v-chip 
+      <v-chip
+      small
+       v-on:click="showAll"
        color="success"
       >Show All</v-chip>
     </v-chip-group>
@@ -31,17 +35,36 @@
 <script>
 export default {
   name: "filter-tags",
-  data: () => ({
-    tags: [{name: "tags", showTag: false}]
-  }),
+  data() {
+    return {
+      allTags: [{name:"tag Name", showTag:true}]
+    }
+  },
   methods: {
     setFilter(tag, event){
       window.console.log(event)
       window.console.log(tag)
+    },
+    async loadTags(){
+      var tags = this.$store.state.allTags
+      var newTags = []
+      var i
+      for(i = 0; i < tags.length; i++){
+        newTags.push({name: tags[i], showTag: true})
+      }
+      this.allTags = newTags
+    },
+    async showAll(){
+      await this.$store.dispatch('getTags')
+      await this.loadTags()
+      var i
+      for(i = 0; i < this.allTags.length; i++){
+        this.allTags[i].showTag = false
+      }
     }
   },
   async created() {
-    this.$store.dispatch('getTags')
+    await this.showAll()
   }
 };
 </script>

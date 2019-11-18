@@ -12,52 +12,57 @@
                     "url": "http://soiloptix.ncinnovation.ca"
                 }
             ],
-            "tags" : [".NET Core MVC","Bootstrap","JQuery"],
+            "tags" : [".NET Core MVC","Bootstrap","SQL Server","JQuery"],
             "allImages" : ["/images/soiloptix_main.jpg","/images/soiloptix1.jpg","/images/soiloptix2.jpg"]
         },
         {
             "id": "1",
-            "title": "Project 1",
-            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, natus eos pariatur excepturi magnam quibusdam mollitia voluptatum!",
-            "mainImage": "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+            "title": "Squash Niagara Web App",
+            "shortDescription": "A web application to organize seasons, teams and games for one of Niagara’s premier squash leagues",
+            "mainImage": "/images/squashNiagara_main.jpg",
+            "details": "SquashNiagara",
             "actions": [
                 {
-                    "text": "Live Example",
-                    "url": "https://www.google.com/"
-                },
-                {
                     "text": "View Code",
-                    "url": "https://www.google.com/"
+                    "url": "https://gitlab.com/HMBDev/squash-niagara"
                 }
             ],
-            "tags" : ["Javascript"]
+            "tags" : [".NET Core MVC", "Bootstrap", "Entitiy Framework"],
+            "allImages" : ["/images/squashNiagara_main.jpg","/images/squashNiagara1.jpg","/images/squashNiagara2.jpg"]
         },
         {
             "id": "2",
-            "title": "Project 2",
-            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, natus eos pariatur excepturi magnam quibusdam mollitia voluptatum!",
-            "mainImage": "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+            "title": "The Scottish Loft Online Shop",
+            "shortDescription": "The Scottish Loft carries hundreds of products and gifts from Scotland, England and Wales",
+            "mainImage": "/images/scottishLoft_main.jpg",
+            "details" : "ScottishLoft",
             "actions": [
                 {
                     "text": "Live Example",
-                    "url": "https://www.google.com/"
+                    "url": "https://www.scottishloft.com/"
                 }
             ],
-            "tags" : ["C#", "SQL", ".Net Core"]
+            "tags" : ["Business Catalyst","Zurb Foundation"],
+            "allImages" : ["/images/scottishLoft_main.jpg","/images/scottishLoft1.jpg","/images/scottishLoft2.jpg"]
         },
         {
             "id": "3",
-            "title": "Project 3",
-            "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, natus eos pariatur excepturi magnam quibusdam mollitia voluptatum!",
-            "mainImage": "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+            "title": "SoilOptix API",
+            "shortDescription": "An API that securely allows memebers to use their soil data",
+            "mainImage": "/images/soiloptix_api_main.jpg",
+            "details" : "SoilOptixAPI",
             "actions": [
                 {
-                    "text": "Live Example",
-                    "url": "https://www.google.com/"
+                    "text": "Swagger UI",
+                    "url": "http://soiloptixapi.ncinnovation.ca/swagger/index.html"
+                },
+                {
+                    "text": "Documentation",
+                    "url": "http://soiloptixapi.ncinnovation.ca/documentation?v=1"
                 }
             ],
-            "tags" : ["Python", "SQL"]
+            "tags" : [".NET Core API", "JWT","Swagger"],
+            "allImages" : ["/images/soiloptix_api_main.jpg","/images/soiloptix_api1.jpg","/images/soiloptix_api2.jpg"]
         }
-        
     ]
 }

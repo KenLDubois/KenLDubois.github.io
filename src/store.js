@@ -11,6 +11,7 @@ export default new Vuex.Store({
     state: {
         projects: [],
         activeProject: null,
+        allTags: []
     },
     mutations: {
         updateProjects(state, projects){
@@ -47,16 +48,22 @@ export default new Vuex.Store({
 
                 for(var j = 0; j < iTags.length; j++){
                     if(!allTags.includes(iTags[j])){
+                        allTags.push(iTags[j])
+                        
                         uniqueTags.push(iTags[j])
 
-                        allTags.push({
-                            name: iTags[j],
-                            showTag: false
-                        })
+                        // uniqueTags.push({
+                        //     name: iTags[j],
+                        //     showTag: true
+                        // })
                     }
                 }
             }
-            commit('updateAllTags', allTags)
+            commit('updateAllTags', uniqueTags)
+        },
+
+        async filterProjects({commit},tagName){
+            
         }
     }
 }) 
