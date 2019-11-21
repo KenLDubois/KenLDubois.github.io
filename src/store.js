@@ -11,23 +11,50 @@ export default new Vuex.Store({
     state: {
         projects: [],
         activeProject: null,
-        allTags: []
+        allTags: [],
+        filterTags: [],
     },
     mutations: {
         updateProjects(state, projects){
             state.projects = projects;
         },
         updateAllTags(state, tags){
-            state.allTags = tags;
+            state.allTags = tags.sort();
         },
         updateActiveProject(state, project){
             state.activeProject = project
+        },
+        updateFilterTags(state, tags){
+            state.filterTags = tags;
         }
     },
     actions: {
         async getProjects({commit}) {
-            let projects = await data;
-            commit('updateProjects', projects.data)
+            let pdata = await data;
+
+            var projects = pdata.data;
+
+            if(this.state.filterTags.length == 0){
+                commit('updateProjects',projects)
+            }
+            else {
+
+                var filteredProjects = [];
+
+                for(var i = 0; i < projects.length; i++){
+                    for(var j = 0; j < this.state.filterTags.length; j++){
+                        if(projects[i].tags.includes(this.state.filterTags[j])){
+                            filteredProjects.push(projects[i])
+                            break
+                        }
+                    }
+                    
+                }
+    
+                commit('updateProjects', filteredProjects)
+
+            }
+            
         },
 
         async getProject({commit},projectId){
@@ -61,9 +88,8 @@ export default new Vuex.Store({
             }
             commit('updateAllTags', uniqueTags)
         },
-
-        async filterProjects({commit},tagName){
-            
+        setFilterTags({commit}, tagsArray){
+            commit('updateFilterTags', tagsArray)
         }
     }
 }) 

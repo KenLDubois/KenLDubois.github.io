@@ -12,21 +12,22 @@
           </v-list-item-content>
         </v-list-item>
 <v-list-item>
-<v-chip-group multiple column>
+<v-chip-group multiple column v-model="selectedTags">
       <v-chip  
       outlined
       small
-      v-for="(tag, i) in allTags" 
-       :v-model="tag.showTag"
+      v-for="(tag, i) in this.$store.state.allTags" 
        :key="i"
-       @input="setFilter(tag.name,$event)"
-      >{{ tag.name }}</v-chip>
-      <v-chip
-      small
+       @input="setFilter"
+      >{{ tag }}</v-chip>
+    </v-chip-group>
+</v-list-item>
+<v-list-item>
+  <v-chip
+       small
        v-on:click="showAll"
        color="success"
       >Show All</v-chip>
-    </v-chip-group>
 </v-list-item>
 </div>
     
@@ -37,34 +38,27 @@ export default {
   name: "filter-tags",
   data() {
     return {
-      allTags: [{name:"tag Name", showTag:true}]
+      selectedTags: [],
     }
   },
   methods: {
-    setFilter(tag, event){
-      window.console.log(event)
-      window.console.log(tag)
-    },
-    async loadTags(){
-      var tags = this.$store.state.allTags
-      var newTags = []
-      var i
-      for(i = 0; i < tags.length; i++){
-        newTags.push({name: tags[i], showTag: true})
+    setFilter(){
+      var filterTags = []
+
+      for(var i = 0; i < this.selectedTags.length; i++){
+        filterTags.push(this.$store.state.allTags[this.selectedTags[i]])
       }
-      this.allTags = newTags
+
+      this.$store.dispatch('setFilterTags',filterTags)
+      this.$store.dispatch('getProjects')
     },
     async showAll(){
-      await this.$store.dispatch('getTags')
-      await this.loadTags()
-      var i
-      for(i = 0; i < this.allTags.length; i++){
-        this.allTags[i].showTag = false
-      }
+      await this.$store.dispatch('getProjects')
+      this.selectedTags = [];
     }
   },
   async created() {
-    await this.showAll()
+
   }
 };
 </script>

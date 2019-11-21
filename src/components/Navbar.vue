@@ -20,16 +20,16 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <!-- <FilterProjects /> -->
+      <FilterProjects />
     </v-navigation-drawer>
   </nav>
 </template>
 <script>
-// import FilterProjects from '@/components/FilterProjects'
+import FilterProjects from '@/components/FilterProjects'
 
 export default {
   components: { 
-    // FilterProjects
+    FilterProjects
    },
   data: () => ({
     drawer: null,

@@ -17,7 +17,9 @@ export default {
     //
   }),
   async created() {
-      this.$store.dispatch('getProjects')
+      await this.$store.dispatch('getTags')
+      this.$store.dispatch('setFilterTags',[])
+      await this.$store.dispatch('getProjects')
   }
 };
 </script>
