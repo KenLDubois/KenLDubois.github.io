@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" class="px-10">
         <h2>{{project.title}}</h2>
         <p class="display-1 font-weight-light grey--text">{{project.shortDescription}}</p>
         <div v-html="mdContent"></div>

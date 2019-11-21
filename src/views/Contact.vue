@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row id="about" ref="about">
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" class="px-10">
         <h2>Contact Me</h2>
         <p class="display-1 font-weight-light grey--text">Drop me a line!</p>
         <v-card tile>

@@ -1,10 +1,10 @@
 <template>
   <v-container>
     <v-row id="about" ref="about">
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" class="px-10">
           <h2>About Me</h2>
           <p class="display-1 font-weight-light grey--text">
-              My Name is Ken Dubois. I make cool stuff with .NET Core
+              My Name is Ken Dubois and I make cool stuff with .NET
           </p>
           <p>
             I am a .Net Core developer with a background in graphic design.
@@ -29,6 +29,9 @@
             require constant assistance getting him up and down stairs, sofas, the bed, etc.
           </p>
             <v-btn color="primary" to="/contact">Contact Me</v-btn>
+            <v-btn text color="primary" href="./Ken_Dubois_Resume_2019_Fall.pdf" target="_blank">
+        Download Resume
+      </v-btn>
       </v-col>
       <v-col cols="12" md="6">
           <v-img src="/images/about.jpg"></v-img>
