@@ -12,16 +12,12 @@
             any platform and looks great when it does!
           </p>
           <p>
-            I am currently enrolled in Niagara College’s
-            <span class="font-italic">
-              Computer Programmer Analyst
-              (Co-op)
-            </span> program and am set to graduate in December 2019 with exemplary
-            academic standings. I am also employed at Niagara College’s <span class="font-italic">Research &amp;
+            I am currently employed at Niagara College’s <span class="font-italic">Research &amp;
             Innovation Center</span> (NCRI) where I joined the <span class="font-italic">Agriculture &amp; Environmental
             Technologies</span> team as a software developer in 2017. Before joining NCRI, I
             worked as a graphic designer in the marketing department of one of Canada’s
-            oldest and most respected wineries for over 10 years.
+            oldest and most respected wineries for over 10 years. In 2019 I completed Niagara College’s 
+            <span class="font-italic">Computer Programmer Analyst (Co-op)</span> program with exemplary academic standings.
           </p>
           <p>
             When I am not in front of a computer, I enjoy spending time with my amazing
