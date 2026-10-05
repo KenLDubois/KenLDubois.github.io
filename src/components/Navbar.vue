@@ -4,10 +4,12 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <!-- <v-toolbar-title class="text-uppercase grey--text">Ken Dubois</v-toolbar-title> -->
       <v-spacer></v-spacer>
+     <!-- 
       <v-btn text color="primary" href="./Ken_Dubois_Resume_2019_Fall.pdf" target="_blank">
         Download Resume
         <v-icon right dark>mdi-cloud-download</v-icon>  
       </v-btn>
+      -->
     </v-app-bar>
     <v-navigation-drawer floating v-model="drawer" color="primary" dark app>
       <v-list>
